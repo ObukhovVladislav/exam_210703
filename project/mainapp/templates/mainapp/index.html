@@ -1,0 +1,10 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+{% block content %}
+<h3 class="title">Случайное прилагательное:</h3>
+<div class="text">
+    {% for item in adjective %}
+        {{ item }}
+    {% endfor %}
+</div>
+{% endblock %}
